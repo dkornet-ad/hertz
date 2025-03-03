@@ -43,6 +43,7 @@ package protocol
 
 import (
 	"bytes"
+	"io"
 	"net/http"
 	"sync"
 	"sync/atomic"
@@ -96,6 +97,11 @@ type RequestHeader struct {
 	rawHeaders []byte
 }
 
+func (h *RequestHeader) Write(writer io.Writer) error {
+	_, err := writer.Write(h.Header())
+	return err
+}
+
 func (h *RequestHeader) SetRawHeaders(r []byte) {
 	h.rawHeaders = r
 }
@@ -132,6 +138,15 @@ type ResponseHeader struct {
 	cookies []argsKV
 
 	headerLength int
+}
+
+func (h *ResponseHeader) Write(writer io.Writer) error {
+	_, err := writer.Write(h.Header())
+	return err
+}
+
+func (h *ResponseHeader) String() string {
+	return string(h.Header())
 }
 
 // SetHeaderLength sets the size of header for tracer.

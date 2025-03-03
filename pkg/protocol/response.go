@@ -42,6 +42,7 @@
 package protocol
 
 import (
+	"bufio"
 	"errors"
 	"io"
 	"net"
@@ -101,6 +102,45 @@ type Response struct {
 
 	// If set a hijackWriter, hertz will skip the default header/body writer process.
 	hijackWriter network.ExtWriter
+}
+
+type httpWriter interface {
+	Write(w *bufio.Writer) error
+}
+
+func (resp *Response) Write(w *bufio.Writer) error {
+	body := resp.body.Bytes()
+	bodyLen := len(body)
+	if bodyLen > 0 {
+		resp.Header.SetContentLength(bodyLen)
+	}
+	if err := resp.Header.Write(w); err != nil {
+		return err
+	}
+	if bodyLen > 0 {
+		if _, err := w.Write(body); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (resp *Response) String() string {
+	return getHTTPString(resp)
+}
+
+func getHTTPString(hw httpWriter) string {
+	w := bytebufferpool.Get()
+	bw := bufio.NewWriter(w)
+	if err := hw.Write(bw); err != nil {
+		return err.Error()
+	}
+	if err := bw.Flush(); err != nil {
+		return err.Error()
+	}
+	s := string(w.B)
+	bytebufferpool.Put(w)
+	return s
 }
 
 func (resp *Response) GetHijackWriter() network.ExtWriter {

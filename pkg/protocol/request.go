@@ -42,6 +42,7 @@
 package protocol
 
 import (
+	"bufio"
 	"bytes"
 	"compress/gzip"
 	"encoding/base64"
@@ -65,7 +66,8 @@ import (
 )
 
 var (
-	ErrMissingFile = errors.NewPublic("http: no such file")
+	ErrMissingFile         = errors.NewPublic("http: no such file")
+	errRequestHostRequired = errors.NewPublic("missing required Host header in request")
 
 	responseBodyPool bytebufferpool.Pool
 	requestBodyPool  bytebufferpool.Pool
@@ -111,6 +113,74 @@ type Request struct {
 
 	// Request level options, service discovery options etc.
 	options *config.RequestOptions
+}
+
+func (req *Request) String() string {
+	return getHTTPString(req)
+}
+
+func (req *Request) Write(w *bufio.Writer) error {
+	if len(req.Header.Host()) == 0 || req.parsedURI {
+		uri := req.URI()
+		host := uri.Host()
+		if len(req.Header.Host()) == 0 {
+			if len(host) == 0 {
+				return errRequestHostRequired
+			} else {
+				req.Header.SetHostBytes(host)
+			}
+		} else {
+			req.Header.SetHostBytes(host)
+		}
+		req.Header.SetRequestURIBytes(uri.RequestURI())
+
+		if len(uri.username) > 0 {
+			// RequestHeader.SetBytesKV only uses RequestHeader.bufKV.key
+			// So we are free to use RequestHeader.bufKV.value as a scratch pad for
+			// the base64 encoding.
+			nl := len(uri.username) + len(uri.password) + 1
+			nb := nl + len(strBasicSpace)
+			tl := nb + base64.StdEncoding.EncodedLen(nl)
+			if tl > cap(req.Header.bufKV.value) {
+				req.Header.bufKV.value = make([]byte, 0, tl)
+			}
+			buf := req.Header.bufKV.value[:0]
+			buf = append(buf, uri.username...)
+			buf = append(buf, strColon...)
+			buf = append(buf, uri.password...)
+			buf = append(buf, strBasicSpace...)
+			base64.StdEncoding.Encode(buf[nb:tl], buf[:nl])
+			req.Header.SetBytesKV(strAuthorization, buf[nl:tl])
+		}
+	}
+
+	body := req.body.Bytes()
+	var err error
+	//if req.onlyMultipartForm() {
+	//	body, err = marshalMultipartForm(req.multipartForm, req.multipartFormBoundary)
+	//	if err != nil {
+	//		return fmt.Errorf("error when marshaling multipart form: %w", err)
+	//	}
+	//	req.Header.SetMultipartFormBoundary(req.multipartFormBoundary)
+	//}
+
+	hasBody := false
+	if len(body) == 0 {
+		body = req.postArgs.QueryString()
+	}
+	if len(body) != 0 {
+		hasBody = true
+		req.Header.SetContentLength(len(body))
+	}
+	if err = req.Header.Write(w); err != nil {
+		return err
+	}
+	if hasBody {
+		_, err = w.Write(body)
+	} else if len(body) > 0 {
+		return fmt.Errorf("non-zero body for non-POST request")
+	}
+	return err
 }
 
 type requestBodyWriter struct {
