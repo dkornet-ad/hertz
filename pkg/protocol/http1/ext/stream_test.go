@@ -22,10 +22,10 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/bytebufferpool"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/test/mock"
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/common/bytebufferpool"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/mock"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 func createChunkedBody(body, rest []byte, trailer map[string]string, hasTrailer bool) []byte {

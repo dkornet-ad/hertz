@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/utils"
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 func TestHTMLDebug_StartChecker_timer(t *testing.T) {

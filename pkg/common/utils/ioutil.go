@@ -19,7 +19,7 @@ package utils
 import (
 	"io"
 
-	"github.com/cloudwego/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 func CopyBuffer(dst network.Writer, src io.Reader, buf []byte) (written int64, err error) {

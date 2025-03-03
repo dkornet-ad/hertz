@@ -47,12 +47,12 @@ import (
 	"net"
 	"sync"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	"github.com/cloudwego/hertz/internal/nocopy"
-	"github.com/cloudwego/hertz/pkg/common/bytebufferpool"
-	"github.com/cloudwego/hertz/pkg/common/compress"
-	"github.com/cloudwego/hertz/pkg/common/utils"
-	"github.com/cloudwego/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	"github.com/dkornet-ad/hertz/internal/nocopy"
+	"github.com/dkornet-ad/hertz/pkg/common/bytebufferpool"
+	"github.com/dkornet-ad/hertz/pkg/common/compress"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 var (

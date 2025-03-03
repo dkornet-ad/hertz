@@ -25,8 +25,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/cloudwego/hertz/cmd/hz/meta"
-	"github.com/cloudwego/hertz/cmd/hz/util"
+	"github.com/dkornet-ad/hertz/cmd/hz/meta"
+	"github.com/dkornet-ad/hertz/cmd/hz/util"
 	"gopkg.in/yaml.v2"
 )
 

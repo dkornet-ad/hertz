@@ -45,8 +45,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/protocol"
 	"github.com/cloudwego/netpoll"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 func TestResponseHeaderCookie(t *testing.T) {

@@ -47,8 +47,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/hlog"
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/common/hlog"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 	"github.com/fsnotify/fsnotify"
 )
 

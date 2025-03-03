@@ -19,7 +19,7 @@ package stats
 import (
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestDefineNewEvent(t *testing.T) {

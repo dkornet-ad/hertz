@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/config"
-	"github.com/cloudwego/hertz/pkg/common/hlog"
-	"github.com/cloudwego/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	"github.com/dkornet-ad/hertz/pkg/common/hlog"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 type transport struct {

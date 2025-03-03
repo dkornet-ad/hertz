@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestExtWriter(t *testing.T) {

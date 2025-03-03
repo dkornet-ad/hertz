@@ -21,10 +21,10 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/test/mock"
+	"github.com/dkornet-ad/hertz/pkg/common/test/mock"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 type writeReadTest interface {

@@ -23,10 +23,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/app/middlewares/server/recovery"
-	"github.com/cloudwego/hertz/pkg/common/config"
-	"github.com/cloudwego/hertz/pkg/common/hlog"
-	"github.com/cloudwego/hertz/pkg/route"
+	"github.com/dkornet-ad/hertz/pkg/app/middlewares/server/recovery"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	"github.com/dkornet-ad/hertz/pkg/common/hlog"
+	"github.com/dkornet-ad/hertz/pkg/route"
 )
 
 // Hertz is the core struct of hertz.

@@ -19,8 +19,8 @@ package ut
 import (
 	"bytes"
 
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
 )
 
 // ResponseRecorder records handler's response for later test

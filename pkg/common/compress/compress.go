@@ -48,10 +48,10 @@ import (
 	"io"
 	"sync"
 
-	"github.com/cloudwego/hertz/pkg/common/bytebufferpool"
-	"github.com/cloudwego/hertz/pkg/common/stackless"
-	"github.com/cloudwego/hertz/pkg/common/utils"
-	"github.com/cloudwego/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/common/bytebufferpool"
+	"github.com/dkornet-ad/hertz/pkg/common/stackless"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 const CompressDefaultCompression = 6 // flate.DefaultCompression

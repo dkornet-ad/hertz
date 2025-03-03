@@ -19,7 +19,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/cloudwego/hertz/internal/tagexpr"
+	"github.com/dkornet-ad/hertz/internal/tagexpr"
 )
 
 func TestFunc(t *testing.T) {

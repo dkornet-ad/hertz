@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	"github.com/cloudwego/hertz/pkg/common/hlog"
-	hjson "github.com/cloudwego/hertz/pkg/common/json"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	"github.com/dkornet-ad/hertz/pkg/common/hlog"
+	hjson "github.com/dkornet-ad/hertz/pkg/common/json"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 type structTypeFieldTextDecoder struct {

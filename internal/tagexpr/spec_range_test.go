@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cloudwego/hertz/internal/tagexpr"
+	"github.com/dkornet-ad/hertz/internal/tagexpr"
 )
 
 func TestIssue12(t *testing.T) {

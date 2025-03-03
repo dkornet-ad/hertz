@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 var (

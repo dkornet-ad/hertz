@@ -31,23 +31,23 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	"github.com/cloudwego/hertz/internal/bytestr"
-	"github.com/cloudwego/hertz/pkg/app/server/binding"
-	"github.com/cloudwego/hertz/pkg/app/server/render"
-	errs "github.com/cloudwego/hertz/pkg/common/errors"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/test/mock"
-	"github.com/cloudwego/hertz/pkg/common/testdata/proto"
-	"github.com/cloudwego/hertz/pkg/common/tracer/traceinfo"
-	"github.com/cloudwego/hertz/pkg/common/utils"
-	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
-	"github.com/cloudwego/hertz/pkg/protocol/http1/req"
-	"github.com/cloudwego/hertz/pkg/protocol/http1/resp"
-	con "github.com/cloudwego/hertz/pkg/route/consts"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	"github.com/dkornet-ad/hertz/internal/bytestr"
+	"github.com/dkornet-ad/hertz/pkg/app/server/binding"
+	"github.com/dkornet-ad/hertz/pkg/app/server/render"
+	errs "github.com/dkornet-ad/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/mock"
+	"github.com/dkornet-ad/hertz/pkg/common/testdata/proto"
+	"github.com/dkornet-ad/hertz/pkg/common/tracer/traceinfo"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
+	"github.com/dkornet-ad/hertz/pkg/protocol/http1/req"
+	"github.com/dkornet-ad/hertz/pkg/protocol/http1/resp"
+	con "github.com/dkornet-ad/hertz/pkg/route/consts"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 func TestProtobuf(t *testing.T) {
@@ -656,8 +656,8 @@ func TestRequestContext_HandlerName(t *testing.T) {
 	c := NewContext(0)
 	c.handlers = HandlersChain{testFunc, testFunc2}
 	val := c.HandlerName()
-	if val != "github.com/cloudwego/hertz/pkg/app.testFunc2" {
-		t.Fatalf("unexpected %v. Expecting %v", val, "github.com/cloudwego/hertz.testFunc2")
+	if val != "github.com/dkornet-ad/hertz/pkg/app.testFunc2" {
+		t.Fatalf("unexpected %v. Expecting %v", val, "github.com/dkornet-ad/hertz.testFunc2")
 	}
 }
 

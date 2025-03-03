@@ -20,10 +20,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudwego/hertz/internal/bytestr"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/test/mock"
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/internal/bytestr"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/mock"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 func TestNewChunkedBodyWriter(t *testing.T) {

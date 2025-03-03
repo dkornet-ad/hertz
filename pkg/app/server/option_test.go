@@ -24,12 +24,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/app/server/registry"
-	"github.com/cloudwego/hertz/pkg/common/config"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/tracer/stats"
-	"github.com/cloudwego/hertz/pkg/common/utils"
-	"github.com/cloudwego/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/app/server/registry"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/tracer/stats"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 func TestOptions(t *testing.T) {

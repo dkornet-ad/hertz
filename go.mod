@@ -1,4 +1,4 @@
-module github.com/cloudwego/hertz
+module github.com/dkornet-ad/hertz
 
 go 1.21
 

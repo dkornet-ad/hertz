@@ -48,10 +48,10 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	"github.com/cloudwego/hertz/internal/bytestr"
-	"github.com/cloudwego/hertz/pkg/app"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	"github.com/dkornet-ad/hertz/internal/bytestr"
+	"github.com/dkornet-ad/hertz/pkg/app"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 type router struct {

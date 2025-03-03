@@ -20,10 +20,10 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/cloudwego/hertz/pkg/app"
-	"github.com/cloudwego/hertz/pkg/common/config"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/route"
+	"github.com/dkornet-ad/hertz/pkg/app"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/route"
 )
 
 // CreateUtRequestContext returns an app.RequestContext for testing purposes

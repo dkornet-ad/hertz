@@ -44,7 +44,7 @@ package utils
 import (
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 // test assert func
@@ -95,8 +95,8 @@ func testName(a int) {
 
 // return the relative path for the function
 func TestUtilsNameOfFunction(t *testing.T) {
-	pathOfTestName := "github.com/cloudwego/hertz/pkg/common/utils.testName"
-	pathOfIsTrueString := "github.com/cloudwego/hertz/pkg/common/utils.IsTrueString"
+	pathOfTestName := "github.com/dkornet-ad/hertz/pkg/common/utils.testName"
+	pathOfIsTrueString := "github.com/dkornet-ad/hertz/pkg/common/utils.IsTrueString"
 	nameOfTestName := NameOfFunction(testName)
 	nameOfIsTrueString := NameOfFunction(IsTrueString)
 

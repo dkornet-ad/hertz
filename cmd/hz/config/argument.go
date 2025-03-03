@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cloudwego/hertz/cmd/hz/meta"
-	"github.com/cloudwego/hertz/cmd/hz/util"
-	"github.com/cloudwego/hertz/cmd/hz/util/logs"
+	"github.com/dkornet-ad/hertz/cmd/hz/meta"
+	"github.com/dkornet-ad/hertz/cmd/hz/util"
+	"github.com/dkornet-ad/hertz/cmd/hz/util/logs"
 	"github.com/urfave/cli/v2"
 )
 

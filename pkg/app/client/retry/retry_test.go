@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestApply(t *testing.T) {

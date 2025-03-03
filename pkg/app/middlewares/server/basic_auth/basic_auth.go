@@ -46,8 +46,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	"github.com/cloudwego/hertz/pkg/app"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	"github.com/dkornet-ad/hertz/pkg/app"
 )
 
 // Accounts is an alias to map[string]string, construct with {"username":"password"}

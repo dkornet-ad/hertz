@@ -49,12 +49,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/bytebufferpool"
-	"github.com/cloudwego/hertz/pkg/common/compress"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/test/mock"
-	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
+	"github.com/dkornet-ad/hertz/pkg/common/bytebufferpool"
+	"github.com/dkornet-ad/hertz/pkg/common/compress"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/mock"
+	"github.com/dkornet-ad/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
 )
 
 func TestResponseCopyTo(t *testing.T) {

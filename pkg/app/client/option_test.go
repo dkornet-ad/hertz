@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/app/client/retry"
-	"github.com/cloudwego/hertz/pkg/common/config"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/app/client/retry"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestClientOptions(t *testing.T) {

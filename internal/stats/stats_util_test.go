@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/tracer/stats"
-	"github.com/cloudwego/hertz/pkg/common/tracer/traceinfo"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/tracer/stats"
+	"github.com/dkornet-ad/hertz/pkg/common/tracer/traceinfo"
 )
 
 func TestUtil(t *testing.T) {

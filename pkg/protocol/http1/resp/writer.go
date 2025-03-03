@@ -20,9 +20,9 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/protocol/http1/ext"
+	"github.com/dkornet-ad/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/protocol/http1/ext"
 )
 
 var chunkReaderPool sync.Pool

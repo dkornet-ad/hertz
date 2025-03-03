@@ -20,8 +20,8 @@ import (
 	"context"
 	"net"
 
-	"github.com/cloudwego/hertz/pkg/app/server/registry"
-	"github.com/cloudwego/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/app/server/registry"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
 )
 
 type TargetInfo struct {

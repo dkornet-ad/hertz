@@ -21,10 +21,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	hJson "github.com/cloudwego/hertz/pkg/common/json"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	hJson "github.com/dkornet-ad/hertz/pkg/common/json"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 const (

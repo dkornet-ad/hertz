@@ -48,7 +48,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestWriteHexInt(t *testing.T) {

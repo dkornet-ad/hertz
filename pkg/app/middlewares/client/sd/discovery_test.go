@@ -20,10 +20,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cloudwego/hertz/pkg/app/client/discovery"
-	"github.com/cloudwego/hertz/pkg/common/config"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/app/client/discovery"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 func TestDiscovery(t *testing.T) {

@@ -17,7 +17,7 @@ package validator_test
 import (
 	"fmt"
 
-	vd "github.com/cloudwego/hertz/internal/tagexpr/validator"
+	vd "github.com/dkornet-ad/hertz/internal/tagexpr/validator"
 )
 
 func Example() {

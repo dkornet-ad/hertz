@@ -45,8 +45,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cloudwego/hertz/pkg/common/bytebufferpool"
-	"github.com/cloudwego/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/bytebufferpool"
+	"github.com/dkornet-ad/hertz/pkg/common/errors"
 )
 
 // Writer is an interface stackless writer must conform to.

@@ -44,8 +44,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 type fieldInfo struct {

@@ -26,9 +26,9 @@ import (
 	"syscall"
 	"time"
 
-	errs "github.com/cloudwego/hertz/pkg/common/errors"
-	"github.com/cloudwego/hertz/pkg/common/hlog"
-	"github.com/cloudwego/hertz/pkg/network"
+	errs "github.com/dkornet-ad/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/hlog"
+	"github.com/dkornet-ad/hertz/pkg/network"
 )
 
 const (

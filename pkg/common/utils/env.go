@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cloudwego/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/errors"
 )
 
 // Get bool from env

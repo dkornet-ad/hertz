@@ -22,11 +22,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cloudwego/hertz/cmd/hz/config"
-	"github.com/cloudwego/hertz/cmd/hz/generator"
-	"github.com/cloudwego/hertz/cmd/hz/generator/model"
-	"github.com/cloudwego/hertz/cmd/hz/util"
 	"github.com/cloudwego/thriftgo/parser"
+	"github.com/dkornet-ad/hertz/cmd/hz/config"
+	"github.com/dkornet-ad/hertz/cmd/hz/generator"
+	"github.com/dkornet-ad/hertz/cmd/hz/generator/model"
+	"github.com/dkornet-ad/hertz/cmd/hz/util"
 )
 
 const (

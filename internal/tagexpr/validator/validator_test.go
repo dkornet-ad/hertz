@@ -19,7 +19,7 @@ import (
 	"errors"
 	"testing"
 
-	vd "github.com/cloudwego/hertz/internal/tagexpr/validator"
+	vd "github.com/dkornet-ad/hertz/internal/tagexpr/validator"
 )
 
 func assertEqualError(t *testing.T, err error, s string) {

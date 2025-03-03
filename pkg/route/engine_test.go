@@ -53,19 +53,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/app"
-	"github.com/cloudwego/hertz/pkg/app/server/binding"
-	"github.com/cloudwego/hertz/pkg/app/server/registry"
-	"github.com/cloudwego/hertz/pkg/common/config"
-	errs "github.com/cloudwego/hertz/pkg/common/errors"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/common/test/mock"
-	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/cloudwego/hertz/pkg/network/standard"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
-	"github.com/cloudwego/hertz/pkg/protocol/suite"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/pkg/app"
+	"github.com/dkornet-ad/hertz/pkg/app/server/binding"
+	"github.com/dkornet-ad/hertz/pkg/app/server/registry"
+	"github.com/dkornet-ad/hertz/pkg/common/config"
+	errs "github.com/dkornet-ad/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/common/test/mock"
+	"github.com/dkornet-ad/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/network/standard"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
+	"github.com/dkornet-ad/hertz/pkg/protocol/suite"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 func TestNew_Engine(t *testing.T) {
@@ -318,57 +318,57 @@ func TestEngine_Routes(t *testing.T) {
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest1",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest1",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/user",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest2",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest2",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/user/:name/*action",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest1",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest1",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/v1/user",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest1",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest1",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/static/*filepath",
-		Handler: "github.com/cloudwego/hertz/pkg/app.(*fsHandler).handleRequest-fm",
+		Handler: "github.com/dkornet-ad/hertz/pkg/app.(*fsHandler).handleRequest-fm",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "GET",
 		Path:    "/anonymous1",
-		Handler: "github.com/cloudwego/hertz/pkg/route.TestEngine_Routes.func1",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.TestEngine_Routes.func1",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "POST",
 		Path:    "/user",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest2",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest2",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "POST",
 		Path:    "/user/:name/*action",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest2",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest2",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "POST",
 		Path:    "/anonymous2",
-		Handler: "github.com/cloudwego/hertz/pkg/route.TestEngine_Routes.func2",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.TestEngine_Routes.func2",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "POST",
 		Path:    "/v1/login",
-		Handler: "github.com/cloudwego/hertz/pkg/route.handlerTest2",
+		Handler: "github.com/dkornet-ad/hertz/pkg/route.handlerTest2",
 	})
 	assertRoutePresent(t, list, RouteInfo{
 		Method:  "HEAD",
 		Path:    "/static/*filepath",
-		Handler: "github.com/cloudwego/hertz/pkg/app.(*fsHandler).handleRequest-fm",
+		Handler: "github.com/dkornet-ad/hertz/pkg/app.(*fsHandler).handleRequest-fm",
 	})
 }
 

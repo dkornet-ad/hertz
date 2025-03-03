@@ -22,11 +22,11 @@ import (
 	"reflect"
 	"time"
 
-	exprValidator "github.com/cloudwego/hertz/internal/tagexpr/validator"
-	inDecoder "github.com/cloudwego/hertz/pkg/app/server/binding/internal/decoder"
-	hJson "github.com/cloudwego/hertz/pkg/common/json"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	exprValidator "github.com/dkornet-ad/hertz/internal/tagexpr/validator"
+	inDecoder "github.com/dkornet-ad/hertz/pkg/app/server/binding/internal/decoder"
+	hJson "github.com/dkornet-ad/hertz/pkg/common/json"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 )
 
 // BindConfig contains options for default bind behavior.

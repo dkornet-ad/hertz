@@ -20,9 +20,9 @@ import (
 	"crypto/tls"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/app/client/retry"
-	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
+	"github.com/dkornet-ad/hertz/pkg/app/client/retry"
+	"github.com/dkornet-ad/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
 )
 
 type ConnPoolState struct {

@@ -46,9 +46,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 	"google.golang.org/protobuf/proto"
 )
 

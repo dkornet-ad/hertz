@@ -46,12 +46,12 @@ import (
 	"io"
 	"sync"
 
-	"github.com/cloudwego/hertz/internal/bytestr"
-	"github.com/cloudwego/hertz/pkg/common/bytebufferpool"
-	errs "github.com/cloudwego/hertz/pkg/common/errors"
-	"github.com/cloudwego/hertz/pkg/common/utils"
-	"github.com/cloudwego/hertz/pkg/network"
-	"github.com/cloudwego/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/internal/bytestr"
+	"github.com/dkornet-ad/hertz/pkg/common/bytebufferpool"
+	errs "github.com/dkornet-ad/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/utils"
+	"github.com/dkornet-ad/hertz/pkg/network"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
 )
 
 var (
@@ -64,7 +64,7 @@ var (
 	}
 )
 
-// Deprecated: Use github.com/cloudwego/hertz/pkg/protocol.NoBody instead.
+// Deprecated: Use github.com/dkornet-ad/hertz/pkg/protocol.NoBody instead.
 var NoBody = protocol.NoBody
 
 type bodyStream struct {

@@ -45,8 +45,8 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/cloudwego/hertz/internal/bytesconv"
-	hJson "github.com/cloudwego/hertz/pkg/common/json"
+	"github.com/dkornet-ad/hertz/internal/bytesconv"
+	hJson "github.com/dkornet-ad/hertz/pkg/common/json"
 )
 
 type TextDecoder interface {

@@ -49,12 +49,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/app/server/binding/testdata"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
-	"github.com/cloudwego/hertz/pkg/protocol"
-	"github.com/cloudwego/hertz/pkg/protocol/consts"
-	req2 "github.com/cloudwego/hertz/pkg/protocol/http1/req"
-	"github.com/cloudwego/hertz/pkg/route/param"
+	"github.com/dkornet-ad/hertz/pkg/app/server/binding/testdata"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
+	"github.com/dkornet-ad/hertz/pkg/protocol"
+	"github.com/dkornet-ad/hertz/pkg/protocol/consts"
+	req2 "github.com/dkornet-ad/hertz/pkg/protocol/http1/req"
+	"github.com/dkornet-ad/hertz/pkg/route/param"
 	"google.golang.org/protobuf/proto"
 )
 

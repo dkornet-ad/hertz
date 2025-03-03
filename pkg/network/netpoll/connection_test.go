@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
 	"github.com/cloudwego/netpoll"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestReadBytes(t *testing.T) {

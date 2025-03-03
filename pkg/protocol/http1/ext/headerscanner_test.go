@@ -48,8 +48,8 @@ import (
 	"strings"
 	"testing"
 
-	errs "github.com/cloudwego/hertz/pkg/common/errors"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
+	errs "github.com/dkornet-ad/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestHasHeaderValue(t *testing.T) {

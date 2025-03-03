@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudwego/hertz/internal/tagexpr"
+	"github.com/dkornet-ad/hertz/internal/tagexpr"
 )
 
 func assertEqual(t *testing.T, v1, v2 interface{}, msgs ...interface{}) {

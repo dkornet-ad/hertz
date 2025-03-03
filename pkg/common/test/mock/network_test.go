@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	errs "github.com/cloudwego/hertz/pkg/common/errors"
-	"github.com/cloudwego/hertz/pkg/common/test/assert"
 	"github.com/cloudwego/netpoll"
+	errs "github.com/dkornet-ad/hertz/pkg/common/errors"
+	"github.com/dkornet-ad/hertz/pkg/common/test/assert"
 )
 
 func TestConn(t *testing.T) {
