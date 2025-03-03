@@ -1,6 +1,8 @@
 module github.com/cloudwego/hertz
 
-go 1.17
+go 1.21
+
+toolchain go1.23.6
 
 require (
 	github.com/bytedance/gopkg v0.1.0
@@ -13,7 +15,7 @@ require (
 	github.com/tidwall/gjson v1.14.4
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/sys v0.24.0
-	google.golang.org/protobuf v1.27.1
+	google.golang.org/protobuf v1.36.5
 )
 
 require (
